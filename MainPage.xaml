@@ -13,7 +13,6 @@
                 <TextBox x:Name="Input" HorizontalAlignment="Center" Margin="10" Text="Input the phrase you want to tranlate here"/>
                 <Button x:Name="Trans" Content="Translate!" Click="Trans_Click"/>
             </StackPanel>
-            <TextBlock x:Name="tresult" Text="Result will be displayed here"/>
         </StackPanel>
     </Grid>
 </Page>
