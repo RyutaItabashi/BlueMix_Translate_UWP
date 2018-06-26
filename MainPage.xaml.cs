@@ -67,7 +67,8 @@ namespace BlueMixTranslator
             box.FontSize = 20;
             grid1.Margin = new Thickness(5, 5, 5, 5);
             grid1.Children.Add(box);
-            hoge.Children.Add(grid1);
+            cont.Children.Add(grid1);
+            scroller.UpdateLayout();
         }
     }
 }

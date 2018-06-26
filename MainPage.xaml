@@ -8,11 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel x:Name="hoge">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+        <RelativePanel>
+            <StackPanel x:Name="buttons" Orientation="Horizontal" VerticalAlignment="Center" RelativePanel.AlignTopWithPanel="True">
                 <TextBox x:Name="Input" HorizontalAlignment="Center" Margin="10" Text="Input the phrase you want to tranlate here"/>
                 <Button x:Name="Trans" Content="Translate!" Click="Trans_Click"/>
             </StackPanel>
-        </StackPanel>
+            <ScrollViewer x:Name="scroller" Background="LightGray" RelativePanel.Below="buttons" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.Above="rmButton">
+                <StackPanel x:Name="cont">
+
+                </StackPanel>
+            </ScrollViewer>
+            <Button x:Name="rmButton" Content="Delete all translation" Margin="5" RelativePanel.AlignBottomWithPanel="True"/>
+        </RelativePanel>
     </Grid>
 </Page>
