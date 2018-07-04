@@ -19,6 +19,8 @@
                 </StackPanel>
             </ScrollViewer>
             <Button x:Name="rmButton" Content="Delete all translation" Margin="5" RelativePanel.AlignBottomWithPanel="True"/>
+            <TextBox x:Name="csvName" Text="enter file name" Margin="5" RelativePanel.AlignBottomWithPanel="True" RelativePanel.RightOf="rmButton"/>
+            <Button x:Name="csv_Write" Content="Write to CSV" Margin="5" RelativePanel.RightOf="csvName" RelativePanel.AlignBottomWithPanel ="True" Click="csv_Write_Click"/>
         </RelativePanel>
     </Grid>
 </Page>
